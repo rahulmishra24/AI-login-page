@@ -22,4 +22,6 @@ from collection import views
 urlpatterns = [
     url(r'^$', views.home, name='home'),
     path('admin/', admin.site.urls),
+    url(r'login/',views.auth, name='login'),
+    url(r'logout/',views.log, name='logout')
 ]
